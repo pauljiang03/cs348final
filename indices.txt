@@ -1,0 +1,4 @@
+I dropped an index 'ix_book_genre_id' on genre_id of Book.
+I created it to improve queries that filter or search books based on the genre_id which make up the majority of my functionality.
+The index supports my get_books() route that retrieves books based on an genre_id parameter, and my get_book_report() route, which generates a report based on book ratings and genres. 
+This allows the database to quickly locate the relevant rows for these functions using the index instead of scanning the entire Book table.
